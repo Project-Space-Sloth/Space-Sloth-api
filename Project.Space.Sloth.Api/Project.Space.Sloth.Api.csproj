@@ -4,7 +4,6 @@
     <TargetFramework>net6.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
-    <RootNamespace>Project_Space_Sloth.Api</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
@@ -12,7 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Project-Space-Sloth.Domain\Project-Space-Sloth.Domain.csproj" />
+    <ProjectReference Include="..\Project.Space.Sloth.Domain\Project.Space.Sloth.Domain.csproj" />
   </ItemGroup>
 
 </Project>
