@@ -23,11 +23,13 @@ namespace Project.Space.Sloth.Api.Controllers{
         public IActionResult GetItem(int id)
         {
             var item = _db.Items.Find(id);
-            if(item == null){
+
+            if (item == null)
+            {
                 return NotFound();
             }
 
-            return Ok();
+            return Ok(_db.Items.Find(id));
         }
 
         [HttpPost]
@@ -42,8 +44,8 @@ namespace Project.Space.Sloth.Api.Controllers{
         public IActionResult PostRating(int id, [FromBody] Rating rating)
         {
             var item = _db.Items.Find(id);
-            if (item == null)
-            {
+
+            if(item == null){
                 return NotFound();
             }
 
@@ -56,25 +58,32 @@ namespace Project.Space.Sloth.Api.Controllers{
         [HttpPut("{id:int}")]
         public IActionResult PutItem(int id, [FromBody] Item item)
         {
-            if (id != item.Id){
+
+            if(id != item.Id) {
                 return BadRequest();
             }
-            if (_db.Items.Find(id) == null){
+            if(_db.Items.Find(id) == null) {
                 return NotFound();
             }
+
+
             _db.Entry(item).State = Microsoft.EntityFrameworkCore.EntityState.Modified;
             _db.SaveChanges();
 
             return NoContent();
+
         }
 
         [HttpDelete("{id:int}")]
         public IActionResult DeleteItem(int id)
         {
             var item = _db.Items.Find(id);
-            if (item == null) {
+
+            if (item == null){
                 return NotFound();
             }
+
+
             _db.Items.Remove(item);
             _db.SaveChanges();
 
