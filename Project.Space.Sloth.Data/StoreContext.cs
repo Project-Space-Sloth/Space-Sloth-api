@@ -1,5 +1,6 @@
 ﻿using Project.Space.Sloth.Domain.Catalog;
 using Microsoft.EntityFrameworkCore;
+using Project.Space.Sloth.Domain.Orders;
 
 namespace Project.Space.Sloth.Data{
     public class StoreContext : DbContext{
@@ -8,11 +9,7 @@ namespace Project.Space.Sloth.Data{
         }
 
         public DbSet<Item> Items { get; set; }
-
-        protected override void OnModelCreating(ModelBuilder builder) {
-            base.OnModelCreating(builder);
-            DbInitializer.Initialize(builder);
-        }
+        public DbSet<Order> Orders { get; set; }
 
     }
 
