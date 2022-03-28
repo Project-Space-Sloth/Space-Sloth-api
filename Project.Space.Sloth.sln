@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project.Space.Sloth.Api", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project.Space.Sloth.Domain", "Project.Space.Sloth.Domain\Project.Space.Sloth.Domain.csproj", "{398BB61F-09F1-43F6-85C1-83FAF65CBA52}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project.Space.Sloth.Data", "Project.Space.Sloth.Data\Project.Space.Sloth.Data.csproj", "{51C92E95-00E2-46B6-8FD1-B2F9F2580DB8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{398BB61F-09F1-43F6-85C1-83FAF65CBA52}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{398BB61F-09F1-43F6-85C1-83FAF65CBA52}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{398BB61F-09F1-43F6-85C1-83FAF65CBA52}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51C92E95-00E2-46B6-8FD1-B2F9F2580DB8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51C92E95-00E2-46B6-8FD1-B2F9F2580DB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51C92E95-00E2-46B6-8FD1-B2F9F2580DB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51C92E95-00E2-46B6-8FD1-B2F9F2580DB8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
