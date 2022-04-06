@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
+
 namespace Project.Space.Sloth.Domain.Orders{
     public class Order{
         public int Id { get; set; }
