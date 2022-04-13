@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project.Space.Sloth.Domain"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project.Space.Sloth.Data", "Project.Space.Sloth.Data\Project.Space.Sloth.Data.csproj", "{51C92E95-00E2-46B6-8FD1-B2F9F2580DB8}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{82F21B99-4EAD-4FAD-A822-E8235D4321DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project.Space.Sloth.Domain.Tests", "tests\Project.Space.Sloth.Domain.Tests\Project.Space.Sloth.Domain.Tests.csproj", "{3F7290C6-D8AA-46B1-AC38-7D413D9450A3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +34,12 @@ Global
 		{51C92E95-00E2-46B6-8FD1-B2F9F2580DB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{51C92E95-00E2-46B6-8FD1-B2F9F2580DB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{51C92E95-00E2-46B6-8FD1-B2F9F2580DB8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F7290C6-D8AA-46B1-AC38-7D413D9450A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F7290C6-D8AA-46B1-AC38-7D413D9450A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F7290C6-D8AA-46B1-AC38-7D413D9450A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F7290C6-D8AA-46B1-AC38-7D413D9450A3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3F7290C6-D8AA-46B1-AC38-7D413D9450A3} = {82F21B99-4EAD-4FAD-A822-E8235D4321DC}
 	EndGlobalSection
 EndGlobal
