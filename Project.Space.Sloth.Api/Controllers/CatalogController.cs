@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Project.Space.Sloth.Domain.Catalog;
 using Project.Space.Sloth.Data;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Project.Space.Sloth.Api.Controllers{
     [ApiController]
@@ -75,6 +76,7 @@ namespace Project.Space.Sloth.Api.Controllers{
         }
 
         [HttpDelete("{id:int}")]
+        [Authorize("delete:catalog")]
         public IActionResult DeleteItem(int id)
         {
             var item = _db.Items.Find(id);
