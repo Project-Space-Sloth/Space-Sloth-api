@@ -1,0 +1,45 @@
+GET http://localhost:3000/catalog
+
+###
+
+POST https://localhost:3000/catalog
+Content-Type: application/json
+
+{
+    "name": "Shoes",
+    "description": "Running Shoes",
+    "brand": "Nike",
+    "price": 109.99
+}
+
+###
+
+DELETE https://localhost:3000/catalog/3
+
+###
+curl --request POST \
+  --url https://dev-9ae93jxq.us.auth0.com/oauth/token \
+  --header 'content-type: application/json' \
+  --data '{"client_id":"XCHOEOVGMeTndVisqkQxm2sI0tGGolkH",
+  "client_secret":"WTUpASU2O2pM-VOSqgBgr8FRp8M3AA93AOB_J3u
+  zzoKl06KL8suPi065JMvkeQg7","audience":"https://ProjectSpaceSloth",
+  "grant_type":"client_credentials"}'
+
+### DELETE a Item to the Catalog collection
+curl --request DELETE \
+    --url https://localhost:7250/catalog/3 \
+    --header 'authorization: Bearer eyJhbGciOiJSUzI1NiIsI
+    nR5cCI6IkpXVCIsImtpZCI6Ik8wVjJyTVRxdDJ6ZFhHZ0JBSjlxYiJ
+    9.eyJpc3MiOiJodHRwczovL2Rldi05YWU5M2p4cS51cy5hdXRoMC5jb
+    20vIiwic3ViIjoiWENIT0VPVkdNZVRuZFZpc3FrUXhtMnNJMHRHR29s
+    a0hAY2xpZW50cyIsImF1ZCI6Imh0dHBzOi8vUHJvamVjdFNwYWNlU2xv
+    dGgiLCJpYXQiOjE2NTA5MzEyNTEsImV4cCI6MTY1MTAxNzY1MSwiYXpw
+    IjoiWENIT0VPVkdNZVRuZFZpc3FrUXhtMnNJMHRHR29sa0giLCJzY29w
+    ZSI6ImRlbGV0ZTpjYXRhbG9nIiwiZ3R5IjoiY2xpZW50LWNyZWRlbnRp
+    YWxzIn0.SwU38VkhjQWjbmmh4eLSeiQgaUTWMeY2fyE3jYi7UART20IT2
+    EsZWN42licO_so0u1mIZCv_JpXCU_XTnM0H-yT8iuQ-Y5OP4wEQuOKt38
+    vpT7YlE3Qzp39Hzwf3FcqIue1LMi5PcNzey8jcbtGwd6Hz1fuelzQkdXt
+    5T08QG_NyHP62MjF2bWQQ3pm0gVn3aM7iW3xAz53TpYK23PnzskGxSkf2
+    dg60rcqA0NpF1mrG3BPn_0PwKL91I28CLLdnvoR2A3Nt2WPqSxWMFraFJ
+    EnnEuYrfDe8EM-J5L-nvx2Ob2bJrg5p7V_92aqsxIbV0f7WrI7QWOld-btkxCdIDg'
+    
