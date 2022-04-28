@@ -14,7 +14,7 @@ Content-Type: application/json
 
 ###
 
-DELETE https://localhost:3000/catalog/3
+DELETE https://localhost:7153/catalog/3
 
 ###
 curl --request POST \

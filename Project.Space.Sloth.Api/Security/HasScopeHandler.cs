@@ -12,8 +12,8 @@ namespace Project.Space.Sloth.Api.Security{
                 return Task.CompletedTask;
 
             var scopes = context.User
-                .FindFirst(c => c.Type == "scope" && c.Issuer == requirement.Issuer)
-                .Value.Split(' ');
+            .FindFirst(c => c.Type == "scope" && c.Issuer == requirement.Issuer)
+            .Value.Split(' ');
 
             if (scopes.Any(s => s == requirement.Scope))
                 context.Succeed(requirement);
