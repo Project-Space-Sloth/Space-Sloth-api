@@ -40,7 +40,8 @@ builder.Services.AddDbContext<StoreContext>(options =>
 
 builder.Services.AddCors(options => {
     options.AddDefaultPolicy(builder => {
-        builder.WithOrigins("http://localhost:3000")
+        builder.WithOrigins("http://localhost:3000", 
+            "https://ambitious-meadow-0bb7cf50f.1.azurestaticapps.net")
         .AllowAnyHeader()
         .AllowAnyMethod();
     });
